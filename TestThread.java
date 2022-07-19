@@ -3,7 +3,7 @@ public class TestThread {
         Thread thread=new Thread(new Runnable() {
             @Override
             public void run() {
-                //System.out.println("We are now in thread "+Thread.currentThread().getName());
+                System.out.println("We are now in thread "+Thread.currentThread().getName());
                 //System.out.print("Current thread priority "+Thread.currentThread().getPriority());
 
                 throw new RuntimeException("Intentional Exception");
